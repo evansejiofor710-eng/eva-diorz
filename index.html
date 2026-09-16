@@ -15,7 +15,10 @@
 <body>
   <header class="nav">
     <a class="brand" href="#home">EVA <span>DIORZ</span></a>
-    <button class="menu" aria-label="Open menu">☰</button>
+    <div class="nav-actions">
+      <button class="search-toggle" aria-label="Open search">⌕</button>
+      <button class="menu" aria-label="Open menu">☰</button>
+    </div>
     <nav id="navlinks">
       <a href="#home">Home</a>
       <a href="#music">Music</a>
@@ -25,8 +28,16 @@
     </nav>
   </header>
 
+  <div class="search-panel" id="searchPanel" aria-hidden="true">
+    <form id="searchForm" role="search">
+      <input id="siteSearch" type="search" placeholder="Search Eva Diorz website..." autocomplete="off">
+      <button type="submit">SEARCH</button>
+    </form>
+    <p id="searchStatus"></p>
+  </div>
+
   <main>
-    <section id="home" class="hero">
+    <section id="home" class="hero searchable" data-search="home eva diorz houseomenia records more than music afrobeats afro fusion amapiano rap hip hop">
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <p class="eyebrow">HOUSEOMENIA RECORDS PRESENTS</p>
@@ -38,20 +49,20 @@
       </div>
     </section>
 
-    <section id="music" class="section">
+    <section id="music" class="section searchable" data-search="music dark side of me spiderman my trip to hell afro hip pop rap coming soon">
       <div class="section-head">
         <p class="eyebrow">THE SOUND</p>
         <h2>DARK SIDE OF ME</h2>
         <p>Eva Diorz's upcoming 2-song project.</p>
       </div>
       <div class="music-grid">
-        <article class="music-card">
+        <article class="music-card searchable" data-search="spiderman afro hip pop rap coming soon">
           <div class="number">01</div>
           <h3>SPIDERMAN</h3>
           <p>Afro Hip Pop & Rap</p>
           <span>COMING SOON</span>
         </article>
-        <article class="music-card">
+        <article class="music-card searchable" data-search="my trip to hell afro hip pop rap coming soon">
           <div class="number">02</div>
           <h3>MY TRIP TO HELL</h3>
           <p>Afro Hip Pop & Rap</p>
@@ -63,13 +74,18 @@
       </div>
     </section>
 
-    <section id="about" class="section about">
+    <section id="about" class="section about searchable" data-search="about artist eva diorz evans ejiofor houseomenia records more than music nigeria">
       <div>
         <p class="eyebrow">THE ARTIST</p>
         <h2>MORE THAN A NAME.</h2>
       </div>
       <div class="about-copy">
-        <p>Eva Diorz is an emerging Nigerian artist bringing together the energy of Afrobeat, Afro-fusion and Amapiano with the attitude of Rap and Hip-Hop. With a focus on catchy melodies, expressive delivery and a modern sound, Eva Diorz is building a unique musical identity and connecting with listeners through rhythm, emotion and authentic self-expression.</p>
+        <div class="artist-profile">
+          <div class="profile-photo-placeholder" aria-label="Eva Diorz professional photo">EVA DIORZ</div>
+          <div>
+            <p>Eva Diorz is an emerging Nigerian artist bringing together the energy of Afrobeat, Afro-fusion and Amapiano with the attitude of Rap and Hip-Hop. With a focus on catchy melodies, expressive delivery and a modern sound, Eva Diorz is building a unique musical identity and connecting with listeners through rhythm, emotion and authentic self-expression.</p>
+          </div>
+        </div>
         <div class="facts">
           <div><small>REAL NAME</small><strong>Evans Ejiofor</strong></div>
           <div><small>ARTIST NAME</small><strong>Eva Diorz</strong></div>
@@ -79,7 +95,7 @@
       </div>
     </section>
 
-    <section id="videos" class="section video-section">
+    <section id="videos" class="section video-section searchable" data-search="videos visuals music videos visual releases">
       <div class="section-head">
         <p class="eyebrow">VISUALS</p>
         <h2>VIDEOS</h2>
@@ -88,7 +104,7 @@
       <div class="video-placeholder">VISUALS COMING SOON</div>
     </section>
 
-    <section id="contact" class="section contact">
+    <section id="contact" class="section contact searchable" data-search="contact socials booking instagram tiktok youtube facebook spotify">
       <div class="section-head">
         <p class="eyebrow">CONNECT</p>
         <h2>CONTACT & SOCIALS</h2>
@@ -96,12 +112,11 @@
         <a class="booking-email" href="mailto:evansejiofor710@gmail.com">evansejiofor710@gmail.com</a>
       </div>
       <div class="socials">
-        <a href="https://www.instagram.com/evadiorz" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.tiktok.com/@evadiorz" target="_blank" rel="noopener">TikTok</a>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://audiomack.com/evadiorz" target="_blank" rel="noopener">Audiomack</a>
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://linktr.ee/evadiorz" target="_blank" rel="noopener">All Links</a>
+        <a href="https://www.facebook.com/profile.php?id=61593351880511" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/evadiorz_01" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@eva_drz_01" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.youtube.com/@eva_drz" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://open.spotify.com/artist/4hp9BxL7g04OQvRwvYBOsU" target="_blank" rel="noopener">Spotify</a>
       </div>
     </section>
   </main>
