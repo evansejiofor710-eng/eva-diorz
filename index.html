@@ -1,156 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Official website of Eva Diorz — More Than Music. Houseomenia Records.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Eva Diorz — More Than Music. Afrobeat, Afro-fusion and rap from Nigeria. Discover music, visuals and the latest updates.">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="Eva Diorz — More Than Music">
-  <meta property="og:description" content="Official artist website of Eva Diorz.">
-  <title>Eva Diorz — More Than Music</title>
+  <meta property="og:description" content="Discover the sound, music and visuals of Eva Diorz.">
+  <title>Eva Diorz | More Than Music</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav">
-    <a class="brand" href="#home">EVA <span>DIORZ</span></a>
-    <div class="nav-actions">
-      <button class="search-toggle" aria-label="Open search">⌕</button>
-      <button class="menu" aria-label="Open menu">☰</button>
-    </div>
-    <nav id="navlinks">
-      <a href="#home">Home</a>
-      <a href="#music">Music</a>
-      <a href="#about">About</a>
-      <a href="#videos">Videos</a>
-      <a href="#contact">Contact</a>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Eva Diorz home">EVA<span>DIORZ</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#music">Music</a><a href="#about">The artist</a><a href="#visuals">Visuals</a><a href="#connect">Connect</a>
     </nav>
   </header>
 
-  <div class="search-panel" id="searchPanel" aria-hidden="true">
-    <form id="searchForm" role="search">
-      <input id="siteSearch" type="search" placeholder="Search Eva Diorz website..." autocomplete="off">
-      <button type="submit">SEARCH</button>
-    </form>
-    <p id="searchStatus"></p>
-  </div>
-
   <main>
-    <section id="home" class="hero searchable" data-search="home eva diorz houseomenia records more than music afrobeats afro fusion amapiano rap hip hop">
-      <div class="hero-overlay"></div>
+    <section class="hero" id="home">
+      <div class="hero-grain"></div><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
       <div class="hero-content">
-        <p class="eyebrow">HOUSEOMENIA RECORDS PRESENTS</p>
-        <h1>EVA DIORZ</h1>
-        <p class="tagline">MORE THAN MUSIC</p>
-        <p class="genres">AFROBEAT · AFRO-FUSION · AMAPIANO · RAP · HIP-HOP</p>
-        <p class="intro">New sound. Real emotion. No limits.</p>
-        <a class="button" href="#music">EXPLORE MUSIC</a>
+        <p class="overline"><span></span> INDEPENDENT ARTIST · NIGERIA</p>
+        <h1>EVA<br><em>DIORZ</em></h1>
+        <p class="hero-tagline">MORE THAN MUSIC.</p>
+        <p class="hero-copy">Afrobeat. Afro-fusion. Rap.<br>A sound built on feeling, rhythm and ambition.</p>
+        <div class="hero-actions"><a class="btn btn-light" href="#music">EXPLORE THE MUSIC <span>↘</span></a><a class="text-link" href="https://audiomack.com/eva-diorz" target="_blank" rel="noopener">LISTEN ON AUDIOMACK ↗</a></div>
       </div>
+      <div class="hero-index"><span>01 / 04</span><span>HOUSEOMENIA RECORDS</span></div>
+      <a class="scroll-cue" href="#music">SCROLL TO EXPLORE <span>↓</span></a>
     </section>
 
-    <section id="release" class="release-banner searchable" data-search="release september 29 2026 spiderman coming soon">
-      <p class="eyebrow">NEXT RELEASE</p>
-      <h2>SPIDERMAN</h2>
-      <p>Eva Diorz — releasing <strong>29 SEPTEMBER 2026</strong>.</p>
-      <div class="countdown" aria-label="Countdown to Spiderman release">
-        <div><strong id="days">--</strong><span>DAYS</span></div>
-        <div><strong id="hours">--</strong><span>HOURS</span></div>
-        <div><strong id="minutes">--</strong><span>MINUTES</span></div>
-        <div><strong id="seconds">--</strong><span>SECONDS</span></div>
-      </div>
+    <section class="ticker" aria-label="Music genres"><div>AFROBEAT <i>✳</i> AFRO-FUSION <i>✳</i> AMAPIANO <i>✳</i> RAP <i>✳</i> HIP-HOP <i>✳</i> MORE THAN MUSIC <i>✳</i></div></section>
+
+    <section class="section music-section" id="music">
+      <div class="section-top"><p class="eyebrow">THE SOUND / 01</p><p class="section-note">LISTEN · DISCOVER · REPEAT</p></div>
+      <div class="section-heading"><h2>Music that<br><em>moves you.</em></h2><p>Every track is another page in the story. Explore the latest release and follow the journey as new music arrives.</p></div>
+      <article class="featured-release">
+        <div class="release-art"><img src="My%20Trip%20to%20Hell%3A%20Blue%20Car%20Inferno.png" alt="Eva Diorz music artwork" loading="lazy"><span class="art-stamp">EVA<br>DIORZ</span></div>
+        <div class="release-info"><p class="eyebrow">LATEST RELEASE / OUT NOW</p><h3>SPIDERMAN</h3><p class="release-genre">AFRO HIP-POP · RAP</p><p class="release-description">A reminder to keep hope alive, even when life gets heavy. This one is for everyone still pushing forward.</p><div class="release-actions"><a class="btn btn-light" href="https://audiomack.com/eva-diorz" target="_blank" rel="noopener">LISTEN NOW ↗</a><a class="under-link" href="https://open.spotify.com/artist/4hp9BxL7g04OQvRwvYBOsU" target="_blank" rel="noopener">SPOTIFY ARTIST PAGE ↗</a></div></div>
+      </article>
+      <div class="coming-row"><div><p class="eyebrow">IN THE WORKS</p><h3>MORE MUSIC<br><em>ON THE WAY.</em></h3></div><p>Stay connected for new releases, collaborations and announcements.</p><a href="https://www.youtube.com/@eva_drz" target="_blank" rel="noopener" class="circle-link" aria-label="Follow Eva Diorz on YouTube">↗</a></div>
+      <div class="platform-strip"><span>FIND EVA DIORZ ON</span><a href="https://open.spotify.com/artist/4hp9BxL7g04OQvRwvYBOsU" target="_blank" rel="noopener">SPOTIFY ↗</a><a href="https://audiomack.com/eva-diorz" target="_blank" rel="noopener">AUDIOMACK ↗</a><a href="https://on.soundcloud.com/zXCwQQF8NXjQbHBHWx" target="_blank" rel="noopener">SOUNDCLOUD ↗</a></div>
     </section>
 
-    <section id="music" class="section searchable" data-search="music dark side of me spiderman my trip to hell afro hip pop rap coming soon spotify audiomack soundcloud apple music">
-      <div class="section-head">
-        <p class="eyebrow">THE SOUND</p>
-        <h2>DARK SIDE OF ME</h2>
-        <p>Eva Diorz's upcoming 2-song project.</p>
-      </div>
-      <div class="music-grid">
-        <article class="music-card searchable" data-search="spiderman afro hip pop rap coming soon september 29 2026">
-          <div class="number">01</div>
-          <h3>SPIDERMAN</h3>
-          <p>Afro Hip Pop &amp; Rap</p>
-          <span>COMING SOON · 29 SEPTEMBER 2026</span>
-        </article>
-        <article class="music-card searchable" data-search="my trip to hell afro hip pop rap coming soon">
-          <div class="number">02</div>
-          <h3>MY TRIP TO HELL</h3>
-          <p>Afro Hip Pop &amp; Rap</p>
-          <span>COMING SOON</span>
-        </article>
-      </div>
-      <div class="platforms searchable" data-search="music platforms spotify audiomack soundcloud apple music youtube music">
-        <p class="eyebrow">LISTEN</p>
-        <h3>STREAM EVA DIORZ</h3>
-        <div class="platform-links">
-          <a href="https://open.spotify.com/artist/4hp9BxL7g04OQvRwvYBOsU" target="_blank" rel="noopener">Spotify</a>
-          <a href="https://on.soundcloud.com/zXCwQQF8NXjQbHBHWx" target="_blank" rel="noopener">SoundCloud</a>
-          <a href="https://audiomack.com/eva-diorz" target="_blank" rel="noopener">Audiomack</a>
-          <span class="platform-coming">Apple Music · Coming Soon</span>
-          <span class="platform-coming">Amazon Music · Coming Soon</span>
-          <span class="platform-coming">YouTube Music · Coming Soon</span>
-        </div>
-      </div>
-      <div class="artwork">
-        <img src="My Trip to Hell: Blue Car Inferno.png" alt="Eva Diorz — My Trip To Hell artwork">
-      </div>
+    <section class="about-section" id="about">
+      <div class="about-visual"><div class="portrait-frame"><div class="portrait-monogram">ED<span>✳</span></div><p>THE ARTIST<br>BEHIND THE SOUND</p></div><span class="vertical-label">HOUSEOMENIA RECORDS</span></div>
+      <div class="about-copy"><p class="eyebrow">THE ARTIST / 02</p><h2>More than<br>a <em>sound.</em></h2><p>Eva Diorz is an emerging Nigerian artist exploring the meeting point of Afrobeat, Afro-fusion, Amapiano and rap. Driven by rhythm, honest expression and a love for music, Eva is building a distinct sound and a story that keeps moving forward.</p><p>Rooted in ambition and inspired by real-life experiences, the music is made to connect, uplift and leave its mark.</p><div class="artist-details"><div><span>BASED IN</span><strong>ABUJA, NIGERIA</strong></div><div><span>SOUND</span><strong>AFRO-FUSION / RAP</strong></div><div><span>IMPRINT</span><strong>HOUSEOMENIA RECORDS</strong></div></div></div>
     </section>
 
-    <section id="about" class="section about searchable" data-search="about artist eva diorz evans ejiofor houseomenia records more than music nigeria artist photo biography">
-      <div>
-        <p class="eyebrow">THE ARTIST</p>
-        <h2>MORE THAN A NAME.</h2>
-      </div>
-      <div class="about-copy">
-        <div class="artist-profile">
-          <div class="profile-photo-placeholder" aria-label="Eva Diorz professional photo">EVA DIORZ</div>
-          <div>
-            <p>Eva Diorz is an emerging Nigerian artist bringing together the energy of Afrobeat, Afro-fusion and Amapiano with the attitude of Rap and Hip-Hop. With a focus on catchy melodies, expressive delivery and a modern sound, Eva Diorz is building a unique musical identity and connecting with listeners through rhythm, emotion and authentic self-expression.</p>
-          </div>
-        </div>
-        <div class="facts">
-          <div><small>REAL NAME</small><strong>Evans Ejiofor</strong></div>
-          <div><small>ARTIST NAME</small><strong>Eva Diorz</strong></div>
-          <div><small>LABEL</small><strong>Houseomenia Records</strong></div>
-          <div><small>TAGLINE</small><strong>More Than Music</strong></div>
-        </div>
-      </div>
-    </section>
+    <section class="visuals-section" id="visuals"><div class="section-top"><p class="eyebrow">THE VISUALS / 03</p><p class="section-note">WATCH THE JOURNEY</p></div><div class="visuals-content"><div><h2>See the<br><em>vision.</em></h2><p>Official videos, studio moments and new visuals live on Eva Diorz's YouTube channel.</p><a class="btn btn-light" href="https://www.youtube.com/@eva_drz" target="_blank" rel="noopener">VISIT YOUTUBE ↗</a></div><a class="video-panel" href="https://www.youtube.com/@eva_drz" target="_blank" rel="noopener"><span class="play-icon">▶</span><span>WATCH ON YOUTUBE</span><small>@EVA_DRZ</small></a></div></section>
 
-    <section id="videos" class="section video-section searchable" data-search="videos visuals music videos visual releases">
-      <div class="section-head">
-        <p class="eyebrow">VISUALS</p>
-        <h2>VIDEOS</h2>
-        <p>Music videos and visual releases will appear here.</p>
-      </div>
-      <div class="video-placeholder">VISUALS COMING SOON</div>
-    </section>
-
-    <section id="contact" class="section contact searchable" data-search="contact socials booking instagram tiktok youtube facebook spotify soundcloud audiomack email">
-      <div class="section-head">
-        <p class="eyebrow">CONNECT</p>
-        <h2>CONTACT &amp; SOCIALS</h2>
-        <p>For bookings and professional enquiries, email:</p>
-        <a class="booking-email" href="mailto:evansejiofor710@gmail.com">evansejiofor710@gmail.com</a>
-      </div>
-      <div class="socials">
-        <a href="https://www.facebook.com/profile.php?id=61593351880511" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://www.instagram.com/evadiorz_01" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.tiktok.com/@eva_drz_01" target="_blank" rel="noopener">TikTok</a>
-        <a href="https://www.youtube.com/@eva_drz" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://open.spotify.com/artist/4hp9BxL7g04OQvRwvYBOsU" target="_blank" rel="noopener">Spotify</a>
-        <a href="https://on.soundcloud.com/zXCwQQF8NXjQbHBHWx" target="_blank" rel="noopener">SoundCloud</a>
-        <a href="https://audiomack.com/eva-diorz" target="_blank" rel="noopener">Audiomack</a>
-      </div>
-    </section>
+    <section class="connect-section" id="connect"><p class="eyebrow">STAY IN THE LOOP / 04</p><h2>Be part of<br><em>the journey.</em></h2><p>Follow Eva Diorz for new music, announcements, behind-the-scenes moments and more.</p><div class="social-grid"><a href="https://www.instagram.com/evadiorz_01" target="_blank" rel="noopener"><span>01</span>INSTAGRAM <b>↗</b></a><a href="https://www.tiktok.com/@eva_drz_01" target="_blank" rel="noopener"><span>02</span>TIKTOK <b>↗</b></a><a href="https://www.facebook.com/profile.php?id=61593351880511" target="_blank" rel="noopener"><span>03</span>FACEBOOK <b>↗</b></a><a href="https://www.youtube.com/@eva_drz" target="_blank" rel="noopener"><span>04</span>YOUTUBE <b>↗</b></a><a href="https://open.spotify.com/artist/4hp9BxL7g04OQvRwvYBOsU" target="_blank" rel="noopener"><span>05</span>SPOTIFY <b>↗</b></a><a href="https://audiomack.com/eva-diorz" target="_blank" rel="noopener"><span>06</span>AUDIOMACK <b>↗</b></a></div></section>
   </main>
 
-  <footer>
-    <div>EVA DIORZ</div>
-    <span>HOUSEOMENIA RECORDS · MORE THAN MUSIC · © 2026</span>
-  </footer>
+  <footer><a class="wordmark" href="#home">EVA<span>DIORZ</span></a><p>HOUSEOMENIA RECORDS · MORE THAN MUSIC</p><a href="#home" class="back-top">BACK TO TOP ↑</a><small>© <span id="year">2026</span> EVA DIORZ. ALL RIGHTS RESERVED.</small></footer>
   <script src="script.js"></script>
 </body>
 </html>
