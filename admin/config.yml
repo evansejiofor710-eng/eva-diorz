@@ -1,11 +1,13 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
 backend:
-  name: git-gateway
+  name: github
+  repo: evansejiofor710-eng/eva-diorz
   branch: main
+  auth_methods: [oauth]
 
 media_folder: "uploads"
 public_folder: "/uploads"
 
-publish_mode: simple
 site_url: https://eva-diorz.netlify.app
 display_url: https://eva-diorz.netlify.app
 
