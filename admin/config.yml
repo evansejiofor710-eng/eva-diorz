@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+publish_mode: simple
+site_url: https://eva-diorz.netlify.app
+display_url: https://eva-diorz.netlify.app
+
+collections:
+  - name: "site"
+    label: "Website content"
+    files:
+      - name: "site_settings"
+        label: "Artist profile and latest release"
+        file: "data/site.json"
+        fields:
+          - { label: "Artist name", name: "artist_name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Hero introduction", name: "hero_intro", widget: "text" }
+          - { label: "Artist bio paragraph 1", name: "artist_bio_1", widget: "text" }
+          - { label: "Artist bio paragraph 2", name: "artist_bio_2", widget: "text" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Music style", name: "sound", widget: "string" }
+          - { label: "Record label / imprint", name: "imprint", widget: "string" }
+          - { label: "Latest release title", name: "release_title", widget: "string" }
+          - { label: "Release status", name: "release_status", widget: "string" }
+          - { label: "Release genre", name: "release_genre", widget: "string" }
+          - { label: "Release description", name: "release_description", widget: "text" }
+          - { label: "Release artwork", name: "release_artwork", widget: "image" }
+          - { label: "Audiomack URL", name: "audiomack_url", widget: "string" }
+          - { label: "Spotify URL", name: "spotify_url", widget: "string" }
